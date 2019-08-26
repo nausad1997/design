@@ -1,4 +1,8 @@
- // let multiply=(...input)=>//program to find length 
+ 
+
+
+//program to find length of rest parameter
+ // let multiply=(...input)=>
 // // {
 // // 	return input.length;
 // // }
@@ -20,7 +24,12 @@
 // // 	return x*y;
 // // }
 // // console.log(multiply(0,5))
-// let factor=(n)=>// program to find largest prime factor of a number
+
+
+
+
+// program to find largest prime factor of a number
+// let factor=(n)=>
 // {
 //  for(var i=2;i<=n;i++)
 //     {
@@ -35,7 +44,12 @@
 //     return i;
 // }
 // console.log(factor(600851475143));
-// let multiply=(x,y)=>//program to find multiplication of two number irrespective of input passed
+
+
+
+
+//program to find multiplication of two number irrespective of input passed
+// let multiply=(x,y)=>
 // {
 // 	//var n=(typeof x);
 // 	// if(typeof x=='string')
@@ -74,10 +88,15 @@
 // }
 // console.log(multiply(-9,-7))
 
-// let convertTemplate=(...rest)=>//program that takes input as rest parameters and return concanated string, 
+
+
+
+
+//program that takes input as rest parameters and return concanated string, 
 //                                //irrespective of the data type passed as argument to the function
 //                                //like("aa",3)
 //                                //output-aa3
+// let convertTemplate=(...rest)=>
 // {
 // 	 var n;
 // 	// for(x in rest)
@@ -98,19 +117,19 @@
 // }
 // console.log(convertTemplate("aa",3,4,6,4,3,2,6," ","s"));
 
+
+
+
+
 /*
 Complete the code in Index.js in a way that 
 the function should return a single object
  which has key as the parameter someKey and value as someValue
 
 */
-// let convertToKeyValuePair = (someKey,someValue)=>{/*
-// Complete the code in Index.js in a way that 
-// the function should return a single object
-//  which has key as the parameter someKey and value as someValue
-
-// */
-
+// let convertToKeyValuePair = (someKey,someValue)=>
+//{
+// 
 //     let keyimstoring=someKey;
 //     let valueimstoring=someValue;
 //     let finalobject={
@@ -119,18 +138,14 @@ the function should return a single object
 //     };
 //     console.log(finalobject);
 //     //return finalobject;
-    
-    
-
-//     // this function should return a single object which has 
-//     //key as the value of someKey and value as someValue
-
-   
 
 // };
 // convertToKeyValuePair("first name","Nausad")
-
 // //module.exports = {convertToKeyValuePair:convertToKeyValuePair};
+
+
+
+
 
 
 // Given below is the list of cities in the states of India . You are supposed to complete
@@ -141,16 +156,6 @@ the function should return a single object
 // output - "I,L,M,T"
 // explanation - "Imphal*","Lilong","Mayang Imphal","Thoubal" have their first letters as I, L, M and T
 
-
-
-
-
-// let findCityFunction = (stateName)=>{
-//     // start your code here.
-
-// };
-
-// module.exports ={findCityFunction:findCityFunction};
 let cityData = {
     "Andaman and Nicobar Islands": [
       "Port Blair*"
@@ -1493,4 +1498,121 @@ let findCityFunction = (stateName)=>{
 
 };
 console.log(findCityFunction("Assam"));
+
+
+
+
+//program to find a friend from my friendlist!
+// var userToFind=window.prompt("Enter the name of the person:");
+// //let friendList=(user)=>
+// //{
+//  var friendList=["Yogesh","Pradeep","Tarun","Shrish","Rahul","Arun","Vikas"];
+//     for(var i=0;i<friendList.length;i++)
+// {
+//          if(userToFind==friendList[i])
+//           {
+//                   i=Number(i);
+//                   i+=1;
+//                 console.log("User found at position:"+i);
+//                 break;
+//            }
+             
+//    }
+// //};
+// //friendList("Nausad");
+
+
+
+
+
+//program to find age of a person
+// let calculateAge=(date,month,year)=>
+// {
+//    let oldMonth=month;
+//    let today=new Date(Date.now());
+//    let presentDate=today.getDate();
+//    presentMonth=today.getMonth();
+//    presentMonth+=1;
+//    let presentYear=today.getFullYear();
+//    birthYear=year;
+//    let age=presentYear-birthYear;
+//    let presentMonthDays=0;
+//    let olderMonthDays=0;
+//    let daysINmonth=
+//    [
+//         {"first":31},
+//          {"second":28},
+//          {'third':31},
+//          {'fourth':30},
+//          {'fifth':31},
+//          {'sixth':30},
+//          {'seventh':31},
+//          {'eighth':31},
+//         { 'nineth':30},
+//         {'tenth':31},
+//         { 'eleventh':30},
+//         {'twelveth':31}
+//    ]
+// for(x in daysINmonth)
+// {
+//    if(oldMonth==x)
+//    {
+//       for(i=0;i<oldMonth;i++)
+//       {
+//            for(y in daysINmonth[i]);
+//            {
+//                olderMonthDays+=daysINmonth[i][y];
+                  
+//            }
+//       }
+      
+//    }
+                  
+// }
+// for(x in daysINmonth)
+// {
+      
+//    if(presentMonth==x)
+//    {
+//       for(i=0;i<presentMonth;i++)
+//       {
+//            for(y in daysINmonth[i]);
+//            {
+//                presentMonthDays+=daysINmonth[i][y];
+                  
+//            }
+//       }
+       
+//    }
+                  
+// }
+
+// let positive=presentMonthDays-olderMonthDays;
+
+// if(positive>0)
+//              {
+//                return age;
+//              }
+//              else if(positive<0)
+//              {
+//                return age-1;
+//              }
+//              else if(positive==0)
+//               { 
+//                      let newValue=presentDate-date;
+//                       if(newValue>=0)
+//                       {
+//                            return age;
+//                       }
+//                       else if(newValue<0)
+//                       {
+//                            return age-1;
+//                       }
+//                }
+// }
+// let newAge=calculateAge(27,8,2018);
+// console.log("newAge:"+newAge);
+ 
+
+
  

@@ -1,6 +1,4 @@
  
-
-
 //program to find length of rest parameter
  // let multiply=(...input)=>
 // // {
@@ -1468,8 +1466,8 @@ the function should return a single object
 // 				   //let something1=tummy.toString();
 // 				   something='"'+something+'"';
 // 				   //console.log(something1);
-// 				   //let murged=something1.concat(something);
-// 				   //murged=murged+'"';
+// 				   //let merged=something1.concat(something);
+// 				   //merged=merged+'"';
 // 				   return something;
 
 
@@ -1526,90 +1524,90 @@ the function should return a single object
 
 
 //program to find age of a person
-// let calculateAge=(date,month,year)=>
-// {
-//    let oldMonth=month;
-//    let today=new Date(Date.now());
-//    let presentDate=today.getDate();
-//    presentMonth=today.getMonth();
-//    presentMonth+=1;
-//    let presentYear=today.getFullYear();
-//    birthYear=year;
-//    let age=presentYear-birthYear;
-//    let presentMonthDays=0;
-//    let olderMonthDays=0;
-//    let daysINmonth=
-//    [
-//         {"first":31},
-//          {"second":28},
-//          {'third':31},
-//          {'fourth':30},
-//          {'fifth':31},
-//          {'sixth':30},
-//          {'seventh':31},
-//          {'eighth':31},
-//         { 'nineth':30},
-//         {'tenth':31},
-//         { 'eleventh':30},
-//         {'twelveth':31}
-//    ]
-// for(x in daysINmonth)
-// {
-//    if(oldMonth==x)
-//    {
-//       for(i=0;i<oldMonth;i++)
-//       {
-//            for(y in daysINmonth[i]);
-//            {
-//                olderMonthDays+=daysINmonth[i][y];
+let calculateAge=(date,month,year)=>
+{
+   let oldMonth=month;
+   let today=new Date(Date.now());
+   let presentDate=today.getDate();
+   presentMonth=today.getMonth();
+   presentMonth+=1;
+   let presentYear=today.getFullYear();
+   birthYear=year;
+   let age=presentYear-birthYear;
+   let presentMonthDays=0;
+   let olderMonthDays=0;
+   let daysINmonth=
+   [
+        {"first":31},
+         {"second":28},
+         {'third':31},
+         {'fourth':30},
+         {'fifth':31},
+         {'sixth':30},
+         {'seventh':31},
+         {'eighth':31},
+        { 'nineth':30},
+        {'tenth':31},
+        { 'eleventh':30},
+        {'twelveth':31}
+   ]
+for(x in daysINmonth)
+{
+   if(oldMonth==x)
+   {
+      for(i=0;i<oldMonth;i++)
+      {
+           for(y in daysINmonth[i]);
+           {
+               olderMonthDays+=daysINmonth[i][y];
                   
-//            }
-//       }
+           }
+      }
       
-//    }
+   }
                   
-// }
-// for(x in daysINmonth)
-// {
+}
+for(x in daysINmonth)
+{
       
-//    if(presentMonth==x)
-//    {
-//       for(i=0;i<presentMonth;i++)
-//       {
-//            for(y in daysINmonth[i]);
-//            {
-//                presentMonthDays+=daysINmonth[i][y];
+   if(presentMonth==x)
+   {
+      for(i=0;i<presentMonth;i++)
+      {
+           for(y in daysINmonth[i]);
+           {
+               presentMonthDays+=daysINmonth[i][y];
                   
-//            }
-//       }
+           }
+      }
        
-//    }
+   }
                   
-// }
+}
 
-// let positive=presentMonthDays-olderMonthDays;
+let positive=presentMonthDays-olderMonthDays;
 
-// if(positive>0)
-//              {
-//                return age;
-//              }
-//              else if(positive<0)
-//              {
-//                return age-1;
-//              }
-//              else if(positive==0)
-//               { 
-//                      let newValue=presentDate-date;
-//                       if(newValue>=0)
-//                       {
-//                            return age;
-//                       }
-//                       else if(newValue<0)
-//                       {
-//                            return age-1;
-//                       }
-//                }
-// }
-// let newAge=calculateAge(27,8,2018);
-// console.log("newAge:"+newAge);
+if(positive>0)
+             {
+               return age;
+             }
+             else if(positive<0)
+             {
+               return age-1;
+             }
+             else if(positive==0)
+              { 
+                     let newValue=presentDate-date;
+                      if(newValue>=0)
+                      {
+                           return age;
+                      }
+                      else if(newValue<0)
+                      {
+                           return age-1;
+                      }
+               }
+}
+let newAge=calculateAge(26,2,1997);
+console.log("You Are Now: " +newAge+ " Years Older");
  

@@ -56,41 +56,38 @@
 // let some_name=my_name.calculate_full_name();
 // some_name();
 //classes and oop
-// class Mobile_phones{
-//    brand : string;
-//    RAM: string;
-//    battery:number;//in MAH
-//    camera:number;//in MP
-//    operating_system:string;
-//    internal_space:string;
-//    processor:string;
-//    //constructor definition
-//    constructor(brand : string,
-//     RAM: string,
-//     battery:number,//in MAH
-//     camera:number,//in MP
-//     operating_system:string,
-//     internal_space:string,
-//     processor:string)
-//     {
-//         this.brand=brand;
-//         this.RAM=RAM;
-//         this.battery=battery;
-//         this.camera=camera;
-//         this.operating_system=operating_system;
-//         this.internal_space=internal_space;
-//         this.processor=processor;
-//     }
-//     //function definition
-//     calculate_RAM=()=>
-//     {
-//         return this.RAM;
-//     }
-// }//END OF CLASS
-// let samsunga30=new Mobile_phones("samsung A30","4 GB",3500,20,"ANDROID","64 GB","Snapdragon");
-// let RAM=samsunga30.calculate_RAM();
-// console.log("RAM IS "+ RAM);
-// console.log("Its Operating System Is : "+samsunga30.operating_system);
+var Mobile_phones = /** @class */ (function () {
+    //constructor definition
+    function Mobile_phones(brand, RAM, battery, //in MAH
+    camera, //in MP
+    operating_system, internal_space, processor) {
+        var _this = this;
+        //function definition
+        //getter method
+        this.get_RAM = function () {
+            return _this.RAM;
+        };
+        //setter method
+        this.set_NewRam = function (upgradeRam) {
+            _this.RAM = upgradeRam;
+        };
+        this.brand = brand;
+        this.RAM = RAM;
+        this.battery = battery;
+        this.camera = camera;
+        this.operating_system = operating_system;
+        this.internal_space = internal_space;
+        this.processor = processor;
+    }
+    return Mobile_phones;
+}()); //END OF CLASS
+var samsunga30 = new Mobile_phones("samsung A30", "4 GB", 3500, 20, "ANDROID", "64 GB", "Snapdragon");
+var RAM = samsunga30.get_RAM();
+console.log("Existing RAM IS " + RAM);
+samsunga30.set_NewRam("6 GB");
+var newRam = samsunga30.get_RAM();
+console.log("Upgraded RAM : " + newRam);
+console.log(samsunga30);
 //uses of optional parameter in class
 // class Animals{
 //     limb:number;

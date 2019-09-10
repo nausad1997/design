@@ -136,13 +136,13 @@
 
 //use of inheritance
 class Mobile_phones{
-     brand : string;
-     RAM: string;
-     battery:number;//in MAH
-     camera:any;//in MP
-     operating_system:string;
-     internal_space:string;
-     processor:string;
+    protected brand : string;
+    protected RAM: string;
+    protected battery:number;//in MAH
+    protected camera:any;//in MP
+    protected operating_system:string;
+    protected internal_space:string;
+    protected processor:string;
      
   
      //constructor definition
@@ -177,9 +177,9 @@ class Mobile_phones{
   class googlePixel extends Mobile_phones{
          
     //field
-    popupCamera:string;
-    company:string;
-    android_version:any;
+   private popupCamera:string;
+   private company:string;
+   private android_version:any;
 
     //constructor defined
     constructor(brand : string,
